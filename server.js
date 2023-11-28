@@ -13,7 +13,7 @@ const express = require('express'),
 const indexRouter = require('./routers/indexRouter'),
     regRouter = require('./routers/regRouter'),
     loginRouter = require('./routers/loginRouter'),
-    ticketRouter = require('./routers/ticketRouter')
+    ticketRouter = require('./routers/ticketRouter');
 
 mongoose.connect(process.env.MONGO_URI, console.log('MONGODB CONNECTED'))
 

@@ -13,7 +13,13 @@ const userSchema = new Schema(
             type: Date,
             required: true,
             default: Date.now
-        }
+        },
+        money: {
+            type: Number,
+            required: true,
+            default: 10000
+        },
+        singer: nonReqString
     }
 );
 
