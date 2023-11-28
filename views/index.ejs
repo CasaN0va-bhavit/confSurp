@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Home</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #000518;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .links {
+            display: flex;
+            list-style-type: none;
+        }
+        .nav-link {
+            padding: 35px;
+            padding-top: 0 !important; 
+
+        }
+        h1 {
+            color: #fff;
+        }
+        .nav-link > a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1vw;
+        }
+        nav {
+            /* padding: 10px; */
+            width: 90%;
+            align-self: center;
+        }
+        img {
+            width: 20vw;
+        }
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            margin-top: 2vw;
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+        }
+        .go-link {
+            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 2vw;
+            transition: 0.3s;
+            color: white;
+        }
+        .go-link:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head> 
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="logo-name">COACHELLA</h1>
+            </div>
+            <ul class="links">
+                <li class="nav-link"><a href="/">Home</a></li>
+                <li class="nav-link"><a href="/ticket">Buy Tickets</a></li>
+                <li class="nav-link"><a href="/login">Login</a></li>
+                <li class="nav-link"><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="left">
+            <h1 class="heading">Book your</h1>
+            <h1 class="heading">Tickets for event</h1>
+            <a class="go-link" href="/ticket">Buy Tickets</a>
+        </div>
+        <img src="https://cdn.discordapp.com/attachments/1085909884589047922/1178948382102925393/Frame_3.png?ex=6578003e&is=65658b3e&hm=3e7604961d50ae48d4ceb7db9790f5e4e85557d9f90f17ff480c11f1b05cfdde&" alt="">
+    </div>
 </body>
 </html>

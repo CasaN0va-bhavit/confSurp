@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
           },
         ],
         mode: 'payment',
-        success_url: `http://localhost:5000/success`,
+        success_url: `http://localhost:5000/`,
         cancel_url: `http://localhost:5000/`,
       });
     await User.findOneAndUpdate({username: req.user.username}, {

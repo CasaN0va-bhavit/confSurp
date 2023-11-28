@@ -14,10 +14,10 @@ const userSchema = new Schema(
             required: true,
             default: Date.now
         },
-        money: {
+        tickets: {
             type: Number,
             required: true,
-            default: 10000
+            default: 0
         },
         singer: nonReqString
     }

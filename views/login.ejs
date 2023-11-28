@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #000518;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .links {
+            display: flex;
+            list-style-type: none;
+        }
+        .nav-link {
+            padding: 35px;
+            padding-top: 0 !important; 
+
+        }
+        .h1 {
+            color: #fff;
+            font-size: 3em;
+            align-self: center;
+        }
+        h1 {
+            color: #fff;
+        }
+        .nav-link > a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1vw;
+        }
+        nav {
+            /* padding: 10px; */
+            width: 90%;
+            align-self: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+        }
+        input {
+            outline: none;
+            border: none;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: transparent;
+            padding: 8px;
+        }
+        input:focus {
+            border: #fff 2px solid;
+            border-radius: 50px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="logo-name">COACHELLA</h1>
+            </div>
+            <ul class="links">
+                <li class="nav-link"><a href="/">Home</a></li>
+                <li class="nav-link"><a href="/ticket">Buy Tickets</a></li>
+                <li class="nav-link"><a href="/login">Login</a></li>
+                <li class="nav-link"><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="h1">LOGIN</h1>
     <form action="" method="post">
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="password" placeholder="Password">
