@@ -95,6 +95,9 @@
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit">
+        <% if (messages.error) { %>
+            <p style="color: #fff"><%= messages.error %></p>
+        <% } %>
     </form>
 </body>
 </html>

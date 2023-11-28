@@ -97,6 +97,9 @@
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="cnfpassword" placeholder="Confirm Password">
         <input type="submit">
+        <% if (error) { %>
+            <p style="color: #fff"><%= error %></p>
+        <% } %>
     </form>
 </body>
 </html>
