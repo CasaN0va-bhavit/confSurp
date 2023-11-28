@@ -16,8 +16,8 @@ router.post('/', async (req, res) => {
           },
         ],
         mode: 'payment',
-        success_url: `http://localhost:5000/`,
-        cancel_url: `http://localhost:5000/`,
+        success_url: `https://conf-surp.onrender.com/`,
+        cancel_url: `https://conf-surp.onrender.com/`,
       });
     await User.findOneAndUpdate({username: req.user.username}, {
         $set: {
