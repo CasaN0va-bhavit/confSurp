@@ -39,6 +39,13 @@ app.use('/', indexRouter)
 app.use('/login', forwardAuthenticated, loginRouter)
 app.use('/register', forwardAuthenticated, regRouter)
 app.use('/ticket', ensureAuthenticated, ticketRouter)
+app.get('/success', (req, res) => {
+    res.render('success')
+})
+app.get('/view', ensureAuthenticated, (req, res) => {
+    if (!req.user.tickets) return res.redirect('/ticket');
+    res.render('view', {user: req.user})
+})
 
 app.get('/logout', (req, res) => {
     req.logout();
